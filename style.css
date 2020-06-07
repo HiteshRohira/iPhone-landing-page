@@ -11,9 +11,8 @@ body{
     justify-content: space-between;
     position: fixed;
     top: 0;
-    /* A lot remains to be decided in this background color */
-    background: rgba(128, 128, 128, 0.151);
-    /* border-bottom: 2px solid rgba(128, 128, 128, 0.075); */
+    z-index: 1;
+    background: #ffffff;
 }
 
 #header #header-img{
