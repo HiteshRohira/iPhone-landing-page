@@ -1,0 +1,141 @@
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+    margin: 0;
+}
+
+/* Header */
+
+#header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* A lot remains to be decided in this background color */
+    background: rgba(128, 128, 128, 0.151);
+    /* border-bottom: 2px solid rgba(128, 128, 128, 0.075); */
+}
+
+#header #header-img{
+    max-width: 135px;
+    height: auto;
+    margin: 0 0 0 10%;
+}
+
+#header #nav-bar{
+    margin: 20px 160px 0 0;
+}
+
+#header #nav-bar ul{
+    list-style: none;
+}
+
+#header #nav-bar ul li{
+    display: inline;
+    padding: 0 18px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid black;
+}
+
+/* Section */
+section{
+    width: 80%;
+    margin: 250px auto;
+    display: flex;
+    align-items: center;
+}
+
+section #image{
+    width: 35%;
+    height: auto;
+}
+
+section #image-text{
+    padding: 0 10px 0 120px;
+}
+
+section #image-text h1{
+    font-size: 5.75vw;
+    margin: 0;
+}
+
+section #image-text p{
+    font-size: 2.65vw;
+}
+
+
+/* Video */
+main .video-container{
+    display: flex;
+    justify-content: center;
+}
+
+main #video{
+    max-width: 560px;
+    width: 100%;
+    margin: 0 0 250px;
+}
+
+/* Form */
+
+#form{
+    text-align: center;
+    margin: 0 0 225px;
+}
+
+#form h3{
+    font-size: 5vh;
+    word-wrap: break-word;
+}
+
+#form #email{
+    border: 2px solid #000000;
+    border-radius: 12px;
+    padding: 12px 20px;
+    width: 240px;
+    margin: 20px 0;
+}
+
+#form #submit{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 15px 15px;
+    transition-duration: 350ms;
+}
+
+#form #submit:hover{
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.08);
+}
+
+@media (max-width: 750px){
+    #header{
+        flex-direction: column;
+        align-items: center;
+    }
+    #header #nav-bar{        
+        margin: 20px 1px 0;
+    }
+    #form{
+        margin-bottom: 100px;
+    }
+    main #video{
+        margin-bottom: 100px;
+    }
+    main section #image-text{
+        padding-left: 40px;
+    }
+    main section{
+        margin-bottom: 100px;
+    }
+}
